@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <h1> I am grateful that you use my URL shortener site </h1>
+    <form method = 'POST' name="url" action = '.'>  {% csrf_token %}
+        {{form.as_p}}
+        <input   type="submit" value = "Shortener">
+    </form>
+</head>
+<body>
+
+</body>
+</html>
